@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escalas de temperatura</title>
+    <!-- ESTILOS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MIS ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid bg-primary text-white mb-2">
+        <div class="p-3 border-bottom border-dark">
+            <h1 class="text-center">TEMPERATURAS</h1>
+            <h2 class="text-center">Conversión de escalas</h2>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+            </div>
+
+            <div class="col-8 col-md-4 text-center">
+                <form action="" method="dialog">
+                    <input type="text" id="dato" class="form-control text-center" autofocus required
+                        placeholder="Ingrese la temperatura">
+                    <br>
+                    <select class="form-select" id="e1" aria-label="Default select example" id="e1"
+                        onchange="anularOtros()">
+                        <option selected>Seleccione en qué escala está.</option>
+                        <option value="ce">grados Celsius (°C)</option>
+                        <option value="ke">grados Kelvin (°K)</option>
+                        <option value="fa">grados Fahrenheit (°F)</option>
+                    </select>
+                    <label class="form-label" for="">convertirlos a:</label>
+                    <select class="form-select" aria-label="Default select example" id="e2">
+                        <option selected>Seleccione la escala</option>
+                        <option id="gc" value="ce">grados Celsius (°C)</option>
+                        <option value="ke">grados Kelvin (°K)</option>
+                        <option value="fa">grados Fahrenheit (°F)</option>
+                    </select>
+                    <br>
+                    <button id="btn_convertir" class="btn btn-primary">CONVERTIR</button>
+                    <button id="btn_limpiar" class="btn btn-secondary">Limpiar todo</button>
+                    <!-- <input class="btn btn-secondary m-2" type="reset" value="LIMPIAR TODO"> -->
+                </form>
+            </div>
+
+            <div class="col">
+            </div>
+        </div>
+        <div class="row" id="cuadro">
+            <h2 id="salida"></h2>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <p>Marcelo 2022</p>
+        <div>
+            <a href="https://www.facebook.com/DevMarce/"><img src="./img/fb_icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/marcelo_de_calafate/"><img src="./img/instagram_icon.png" alt="Instagram"></a>
+            <a href="https://twitter.com/DevMarce"><img src="./img/twitter_icon.png" alt="Twitter"></a>
+            <a href="https://wa.me/5492966640433"><img src="./img/whatsapp_icon.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/in/1marce/"><img src="./img/linkedin_icon.png" alt="Linkedin"></a>
+            <a href="mailto:marcelo.berretta@hotmail.com"><img src="./img/windows_icon.png" alt="Outlook"></a>
+            <a href="mailto:marceberre@icloud.com"><img src="./img/apple_icon.png" alt="Apple"></a>
+            <a href="mailto:marcelo.calafate@gmail.com"><img src="./img/gmail_icon.png" alt="Gmail"></a>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
